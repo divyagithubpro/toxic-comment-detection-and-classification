@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>VICIOUS</title>
+
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="static/css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+  <!--owl slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!-- font awesome style -->
+  <link href="static/css/font-awesome.min.css" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="static/css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="static/css/responsive.css" rel="stylesheet" />
+
+</head>
+
+<body class="sub_page">
+
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      
+      <div class="header_bottom">
+        <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg custom_nav-container ">
+            <a class="navbar-brand" href="index.html">
+              <img src="/static/images/logo1.png" alt="">
+            </a>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class=""> </span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav  ">
+                <li class="nav-item ">
+                  <a class="nav-link" href="{% url 'index' %}">Home <span class="sr-only">(current)</span></a>
+                </li>
+                
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'contact' %}">Feedback</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="{% url 'service' %}">Services</a>
+                </li>
+                
+                {% if current_user %}
+                <li class="nav-item ">
+                  <a class="nav-link" href="{% url 'prediction' %}"> Prediction</a>
+                </li>
+                <li class="nav-item ">
+                  <a class="nav-link" href="{% url 'project' %}">Performance_analysis</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'testimonial' %}">Chart</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'logout' %}"> Logout</a>
+                </li>
+                {% else %}
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'login' %}"> Login</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'register' %}"> Register</a>
+                </li>
+                {% endif %}
+               
+                <form class="form-inline">
+                  <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                  </button>
+                </form>
+              </ul>
+              
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- end header section -->
+  </div>
+
+
+  <!-- service section -->
+
+  <section class="service_section layout_padding">
+    <div class="service_container">
+      <div class="container ">
+        <div class="heading_container">
+          <h2>
+            Indian government initiatives and legal provisions
+          </h2>
+          <p>
+            The Indian government has implemented several initiatives to combat cybercrime and deliver justice to victims.
+          </p>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-lg-3">
+            <div class="box ">
+              <div class="img-box">
+                <img src="/static/images/istock.jpg" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Legal provisions
+                </h5>
+                <p>
+                  IT Act, 2000: In order to guarantee legal identity for the electronic interchange of data, the IT Act of 2006 came into effect. Up to three  to five years in jail and a  fine of one lakh rupees, or both, may be imposed for computer-related offences, and in extreme circumstances, even more.  Sections 66A,  66C, 66D, and  66E of  the IT Act impose  penalties on anybody  found guilty of an offence  involving disrespectful behaviour online, on social media, or with other digital media. IT Act sections 67, 67A, and 67B address the publication and electronic transmission of content involving sexually explicit acts, etc
+                  </p>
+                <a href=" https://legislative.gov.in/actsofparliamentfromtheyear/information-technology-act-2000">
+                  Read More
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="box ">
+              <div class="img-box">
+                <img src="/static/images/goven.jpg" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Government initiatives
+                </h5>
+                <p>
+                  The  Nirbhaya funds  scheme: It  is an  initiative of the  Government of  India under  the Nirbhaya  funds scheme  for ensuring the safety of women and children (2013).<br>
+                  Cyber Crime Prevention  against Women and  Child: The CCPWS  system establishes several  sections that are  in charge of reporting online criminal actions and related investigations, examining complaints of cybercrime, and spotting any concerning cybercrime circumstances<br>
+                  Indian cybercrime coordination centre (I4C) scheme: I4C serves as a crucial weapon in the battle against cybercrime to deal with all forms of cybercrime in the nation in a coordinated and all-encompassing way, preventing the needless use of social space.<br>
+
+                </p>
+                <a href="https://pib.gov.in/PressReleasePage.aspx?PRID=1845321">
+                  Read More
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="box ">
+              <div class="img-box">
+                <img src="/static/images/cyber.jpg" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Anti-bullying or cyberbullying laws in India for schools and colleges: 
+                
+                </h5>
+                <p>
+                  The  HRD  ministry  has  established  anti-ragging  committees  in  response  to  the  sharp  rise  in  bullying  in  schools, particularly in boarding institutions in India, in an effort to lower the incidence of bullying. These committees focus on disciplining students who participate in these activities, which may include rustication in cases of significant bullying activity. With proper UGC policies on reducing the prevalence of ragging in higher institutions, the University Grants Commission announces anti-ragging measures for universities and colleges [24].
+                </p>
+                <a href="https://ncpcr.gov.in/uploads/1702548255657ad31ff39b4_preventing-bullying-and-cyberbullying-guidelines-for-schools.pdf">
+                  Read More
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="box ">
+              <div class="img-box">
+                <img src="/static/images/inp.png" alt="">
+              </div>
+              <div class="detail-box">
+                <h5>
+                  Cybercrime reporting portals & helplines:
+                </h5>
+                <p>
+                  National cyber crime reporting  portal: The NCCR site is a government of India programme that allows victims of criticism, particularly women and children, to register online complaints. They respond to complaints as soon as they are  made, with  the support  of  the  local police.  Technology  currently  outperforms all  conventional  methods and  is quicker than the offline process for reporting cybercrime. The National Cyber Crime Reporting Portal  allows for the registration of cybercrime complaints, which enables the filing of complaints about cybercrimes across the country and allows victims and complainants to easily access cybercrime cells and all relevant information. The victim of a crime can also register with  a nearby cyber  crime cell as an  alternative to  making a formal complaint.
+                </p>
+                <a href="">
+                  Read More
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end service section -->
+
+
+         
+</body>
+
+</html>
